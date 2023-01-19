@@ -10,19 +10,44 @@
     <title>Travel</title>
   </head>
   <body class="text-base font-helvetica text-white">
-    <header>
-      <button></button>
-      <nav>
-        <div class="text- font-bold text-13px">LOGO</div>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Discovery</a></li>
-          <li><a href="#">Photos</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Profile</a></li>
+    <header class="p-header relative flex items-center justify-between">
+      <button class="bg-menu w-4 h-[14px]"></button>
+      <nav class="fixed inset-0 text-11px uppercase font-bold text-d-grayish-blue/50 w-[76.5%] bg-off-white">
+        <div class="text-13px text-custom-pink mb-90px pt-10 pl-10">LOGO</div>
+        <ul class="pl-10 pb-36 flex flex-col gap-9">
+          <li class="links">
+            <span class="links-icon">
+              <img src="./src/images/icons/home.svg" alt="Home icon">
+            </span>
+            <a href="#" class="text-d-grayish-blue">Home</a>
+          </li>
+          <li class="links">
+            <span class="links-icon">
+              <img src="./src/images/icons/discover.svg" alt="Discovery icon">
+            </span>
+            <a href="#">Discovery</a>
+          </li>
+          <li class="links">
+            <span class="links-icon">
+              <img src="./src/images/icons/photos.svg" alt="Photos icon">
+            </span>
+            <a href="#">Photos</a>
+          </li>
+          <li class="links">
+            <span class="links-icon">
+              <img src="./src/images/icons/mail.svg" alt="Contact icon icon">
+            </span>
+            <a href="#">Contact</a>
+          </li>
+          <li class="links">
+            <span class="links-icon">
+              <img src="./src/images/icons/avatar.png" alt="Profile icon">
+            </span>
+            <a href="#">Profile</a>
+          </li>
         </ul>
-        <div>
-          <ul>
+        <div class="bg-black px-10 pt-14 pb-10 text-white opacity-[0.23]">
+          <ul class="grid grid-cols-2 grid-rows-4 leading-none gap-y-8 gap-x-12 grid-flow-col">
             <li><a href="#">About</a></li>
             <li><a href="#">Help</a></li>
             <li><a href="#">Terms</a></li>
@@ -59,7 +84,7 @@
           </div>
         </div>
       </nav>
-      <div>LOGO</div>
+      <div class="font-bold text-13px text-light-cyan-blue">LOGO</div>
       <div><img src="./src/images/icons/avatar.png" alt=""></div>
     </header>
   </body>
