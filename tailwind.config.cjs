@@ -15,6 +15,22 @@ module.exports = {
       },
       fontSize: {
         "13px": "0.8125rem",
+        "11px": "0.6875rem",
+      },
+      colors: {
+        "light-cyan-blue": "#A6ADB4",
+        "custom-pink": "#FA6980",
+        "d-grayish-blue": "#343638",
+        "off-white": "#F6F8F9",
+      },
+      backgroundImage: {
+        "menu": "url(../images/icons/menu-icon.svg)",
+      },
+      margin: {
+        "90px": "5.625rem",
+      },
+      gap: {
+        "30px": "1.875rem",
       }
     },
   },
