@@ -20,6 +20,7 @@ module.exports = {
       colors: {
         "light-cyan-blue": "#A6ADB4",
         "custom-pink": "#FA6980",
+        "custom-black": "#202124",
         "d-grayish-blue": "#343638",
         "off-white": "#F6F8F9",
       },
