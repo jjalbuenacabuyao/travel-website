@@ -11,8 +11,14 @@
   </head>
   <body class="text-base font-helvetica text-white">
     <header class="p-header relative flex items-center justify-between">
-      <button id="nav-toggler" aria-controls="nav" class="bg-menu w-4 h-[14px]"></button>
-      <nav id="nav" data-visible="false" 
+      <button
+        id="nav-toggler"
+        aria-controls="nav"
+        class="bg-menu w-4 h-[14px]"
+      ></button>
+      <nav
+        id="nav"
+        data-visible="false"
         class="fixed inset-0 -translate-x-full text-11px uppercase font-bold text-d-grayish-blue/50 w-[76.5%] bg-off-white overflow-y-scroll z-50 transition-all"
       >
         <div class="mb-90px pt-10 px-10 flex justify-between">
@@ -104,7 +110,9 @@
           <div
             class="row-start-1 col-start-1 text-white text-2xl z-10 px-6 py-10 bg-black/[0.2]"
           >
-            <h1 class="uppercase pb-9 border-b-2 border-b-white font-bold">World news</h1>
+            <h1 class="uppercase pb-9 border-b-2 border-b-white font-bold">
+              World news
+            </h1>
             <h2 class="pt-11 pb-14 font-bold">Amazing places in America</h2>
             <p class="text-base pb-5">
               For some reason — this country, this city, this neighborhood, this
@@ -126,37 +134,102 @@
 
         <!-- More News -->
         <article class="px-6 pt-11 pb-10">
-          <div class="flex items-center justify-between pb-9 border-b-2 border-b-[#EBEDED]">
-            <h2 class="uppercase text-custom-black text-2xl font-bold leading-none">More news</h2>
+          <div
+            class="flex items-center justify-between pb-9 border-b-2 border-b-[#EBEDED]"
+          >
+            <h2
+              class="uppercase text-custom-black text-2xl font-bold leading-none"
+            >
+              More news
+            </h2>
             <div class="flex gap-8">
-              <img src="./src/images/icons/arrow back left.svg" alt="arrow left" />
+              <img
+                src="./src/images/icons/arrow back left.svg"
+                alt="arrow left"
+              />
               <img src="./src/images/icons/arrow.svg" alt="arrow right" />
             </div>
           </div>
           <div class="text-light-cyan-blue flex flex-col gap-10 pt-9">
             <!-- Travel -->
             <div class="flex flex-col gap-5">
-              <h3 class="uppercase text-custom-pink font-bold leading-none">Travel</h3>
+              <h3 class="uppercase text-custom-pink font-bold leading-none">
+                Travel
+              </h3>
               <h4 class="text-custom-black leading-none">Article title</h4>
-              <p class="font-acumin">Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat…</p>
+              <p class="font-acumin">
+                Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad
+                has appareat…
+              </p>
               <div class="flex gap-3">
-                <img src="./src/images/icons/time.svg" alt="icon of a clock">
+                <img src="./src/images/icons/time.svg" alt="icon of a clock" />
                 <p class="text-13px">2m ago</p>
               </div>
             </div>
             <!-- Technology -->
             <div class="flex flex-col gap-5">
-              <h3 class="uppercase text-custom-pink font-bold leading-none">Technology</h3>
+              <h3 class="uppercase text-custom-pink font-bold leading-none">
+                Technology
+              </h3>
               <h4 class="text-custom-black leading-none">Article title</h4>
-              <p class="font-acumin">Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat…</p>
+              <p class="font-acumin">
+                Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad
+                has appareat…
+              </p>
               <div class="flex gap-3">
-                <img src="./src/images/icons/time.svg" alt="icon of a clock">
+                <img src="./src/images/icons/time.svg" alt="icon of a clock" />
                 <p class="text-13px">1h ago</p>
               </div>
             </div>
           </div>
         </article>
       </section>
+
+      <!-- Trending -->
+      <article class="px-6 pt-11 pb-9 text-custom-black bg-off-white">
+        <div
+          class="flex items-center justify-between pb-9 border-b-2 border-b-[#EBEDED]"
+        >
+          <h2 class="uppercase text-2xl font-bold leading-none">Trending</h2>
+          <div class="flex gap-8">
+            <img
+              src="./src/images/icons/arrow back left.svg"
+              alt="arrow left"
+            />
+            <img src="./src/images/icons/arrow.svg" alt="arrow right" />
+          </div>
+        </div>
+
+        <div class="mb-9">
+          <img src="./src/images/trending1.jpg" alt="" />
+          <div class="flex flex-col gap-5 bg-white px-6 py-9 rounded-b-2xl">
+            <h3 class="font-bold leading-none">Dolore magna aliqua</h3>
+            <p class="font-acumin text-13px text-light-cyan-blue">
+              Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has
+              appareat.
+            </p>
+            <div class="flex gap-3">
+              <img src="./src/images/icons/time.svg" alt="icon of a clock" />
+              <p class="text-13px text-light-cyan-blue">2m ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <img src="./src/images/trending2.jpg" alt="" />
+          <div class="flex flex-col gap-5 bg-white px-6 py-9 rounded-b-2xl">
+            <h3 class="font-bold leading-none">Dolore magna aliqua</h3>
+            <p class="font-acumin text-13px text-light-cyan-blue">
+              Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has
+              appareat.
+            </p>
+            <div class="flex gap-3">
+              <img src="./src/images/icons/time.svg" alt="icon of a clock" />
+              <p class="text-13px text-light-cyan-blue">1h ago</p>
+            </div>
+          </div>
+        </div>
+      </article>
     </main>
   </body>
 </html>
