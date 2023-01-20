@@ -26,6 +26,7 @@ module.exports = {
       },
       backgroundImage: {
         "menu": "url(../images/icons/menu-icon.svg)",
+        "back": "url(../images/icons/arrow back left.svg)",
       },
       margin: {
         "90px": "5.625rem",
