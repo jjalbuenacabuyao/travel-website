@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://use.typekit.net/mic7ono.css">
+    <link rel="stylesheet" href="https://use.typekit.net/mic7ono.css" />
     <link rel="stylesheet" href="./src/css/style.css" />
     <script src="./src/js/index.js" defer></script>
     <title>Travel</title>
@@ -12,42 +12,48 @@
   <body class="text-base font-helvetica text-white">
     <header class="p-header relative flex items-center justify-between">
       <button class="bg-menu w-4 h-[14px]"></button>
-      <nav class="fixed inset-0 text-11px uppercase font-bold text-d-grayish-blue/50 w-[76.5%] bg-off-white">
+      <nav
+        class="fixed inset-0 -translate-x-full text-11px uppercase font-bold text-d-grayish-blue/50 w-[76.5%] bg-off-white overflow-y-scroll"
+      >
         <div class="text-13px text-custom-pink mb-90px pt-10 pl-10">LOGO</div>
         <ul class="pl-10 pb-36 flex flex-col gap-9">
           <li class="links">
             <span class="links-icon">
-              <img src="./src/images/icons/home.svg" alt="Home icon">
+              <img src="./src/images/icons/home.svg" alt="Home icon" />
             </span>
             <a href="#" class="text-d-grayish-blue">Home</a>
           </li>
           <li class="links">
             <span class="links-icon">
-              <img src="./src/images/icons/discover.svg" alt="Discovery icon">
+              <img src="./src/images/icons/discover.svg" alt="Discovery icon" />
             </span>
             <a href="#">Discovery</a>
           </li>
           <li class="links">
             <span class="links-icon">
-              <img src="./src/images/icons/photos.svg" alt="Photos icon">
+              <img src="./src/images/icons/photos.svg" alt="Photos icon" />
             </span>
             <a href="#">Photos</a>
           </li>
           <li class="links">
             <span class="links-icon">
-              <img src="./src/images/icons/mail.svg" alt="Contact icon icon">
+              <img src="./src/images/icons/mail.svg" alt="Contact icon icon" />
             </span>
             <a href="#">Contact</a>
           </li>
           <li class="links">
             <span class="links-icon">
-              <img src="./src/images/icons/avatar.png" alt="Profile icon">
+              <img src="./src/images/icons/avatar.png" alt="Profile icon" />
             </span>
             <a href="#">Profile</a>
           </li>
         </ul>
-        <div class="bg-black px-10 pt-14 pb-10 text-white opacity-[0.23]">
-          <ul class="grid grid-cols-2 grid-rows-4 leading-none gap-y-8 gap-x-12 grid-flow-col">
+        <div
+          class="bg-black px-10 pt-14 pb-10 text-white opacity-[0.23] flex flex-col gap-16 md:hidden"
+        >
+          <ul
+            class="grid grid-cols-2 grid-rows-4 leading-none gap-y-8 gap-x-12 grid-flow-col"
+          >
             <li><a href="#">About</a></li>
             <li><a href="#">Help</a></li>
             <li><a href="#">Terms</a></li>
@@ -58,7 +64,7 @@
             <li><a href="#">Careers</a></li>
           </ul>
           <div>
-            <ul>
+            <ul class="flex gap-5">
               <li>
                 <img
                   src="./src/images/icons/instagram.svg"
@@ -85,7 +91,67 @@
         </div>
       </nav>
       <div class="font-bold text-13px text-light-cyan-blue">LOGO</div>
-      <div><img src="./src/images/icons/avatar.png" alt=""></div>
+      <div><img src="./src/images/icons/avatar.png" alt="" /></div>
     </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section>
+        <article class="grid grid-cols-1 grid-rows-1">
+          <div
+            class="row-start-1 col-start-1 text-white text-2xl z-10 px-6 py-10 bg-black/[0.2]"
+          >
+            <h1 class="uppercase pb-9 border-b-2 border-b-white font-bold">World news</h1>
+            <h2 class="pt-11 pb-14 font-bold">Amazing places in America</h2>
+            <p class="text-base pb-5">
+              For some reason — this country, this city, this neighborhood, this
+              particular street — is the place you are living a majority of your
+              life in.
+            </p>
+            <button
+              class="text-11px uppercase py-4 px-5 bg-custom-pink leading-none rounded-md"
+            >
+              Learn more
+            </button>
+          </div>
+          <img
+            src="./src/images/hero.jpg"
+            alt=""
+            class="h-full row-start-1 col-start-1 object-cover"
+          />
+        </article>
+
+        <!-- More News -->
+        <article class="px-6 pt-11 pb-10">
+          <div class="flex items-center justify-between pb-9 border-b-2 border-b-[#EBEDED]">
+            <h2 class="uppercase text-custom-black text-2xl font-bold leading-none">More news</h2>
+            <div class="flex gap-8">
+              <img src="./src/images/icons/arrow back left.svg" alt="arrow left" />
+              <img src="./src/images/icons/arrow.svg" alt="arrow right" />
+            </div>
+          </div>
+          <div class="text-light-cyan-blue flex flex-col gap-10 pt-9">
+            <div class="flex flex-col gap-5">
+              <h3 class="uppercase text-custom-pink font-bold leading-none">Travel</h3>
+              <h4 class="text-custom-black leading-none">Article title</h4>
+              <p class="font-acumin">Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat…</p>
+              <div class="flex gap-3">
+                <img src="./src/images/icons/time.svg" alt="icon of a clock">
+                <p class="text-13px">2m ago</p>
+              </div>
+            </div>
+            <div class="flex flex-col gap-5">
+              <h3 class="uppercase text-custom-pink font-bold leading-none">Technology</h3>
+              <h4 class="text-custom-black leading-none">Article title</h4>
+              <p class="font-acumin">Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat…</p>
+              <div class="flex gap-3">
+                <img src="./src/images/icons/time.svg" alt="icon of a clock">
+                <p class="text-13px">1h ago</p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
   </body>
 </html>
