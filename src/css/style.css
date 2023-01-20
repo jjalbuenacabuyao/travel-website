@@ -9,3 +9,52 @@
 .links-icon {
   @apply w-4 aspect-square;
 }
+
+.travel-text-wrapper {
+  @apply flex flex-col gap-5;
+}
+
+.news-heading {
+  @apply uppercase text-custom-pink font-bold leading-none;
+}
+
+.news-title {
+  @apply text-custom-black leading-none font-bold;
+}
+
+.travel-text-wrapper > p {
+  @apply font-acumin;
+}
+
+.time {
+  @apply flex gap-3;
+}
+
+.time > p {
+  @apply text-13px text-light-cyan-blue;
+}
+
+.section-title {
+  @apply uppercase text-custom-black text-2xl font-bold leading-none;
+}
+
+.arrows {
+  @apply flex gap-8;
+}
+
+.more-news,
+.trending {
+  @apply flex items-center justify-between pb-9 border-b-2 border-b-[#EBEDED];
+}
+
+.trending-card {
+  @apply flex flex-col gap-5 bg-white px-6 py-9 rounded-b-2xl;
+}
+
+.trending-card > h3 {
+  @apply font-bold leading-none;
+}
+
+.trending-card > p {
+  @apply font-acumin text-13px text-light-cyan-blue;
+}
