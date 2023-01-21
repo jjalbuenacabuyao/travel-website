@@ -14,18 +14,18 @@
       <button
         id="nav-toggler"
         aria-controls="nav"
-        class="h-[14px] w-4 bg-menu"
+        class="h-[14px] w-4 bg-menu md:hidden"
       ></button>
       <nav
         id="nav"
         data-visible="false"
-        class="fixed inset-0 z-50 w-[76.5%] -translate-x-full overflow-y-scroll bg-off-white text-11px font-bold uppercase text-d-grayish-blue/50 transition-all"
+        class="fixed inset-0 z-50 w-[76.5%] -translate-x-full overflow-y-scroll bg-off-white text-11px font-bold uppercase text-d-grayish-blue/50 transition-all md:static md:order-2 md:w-auto md:translate-x-0 md:bg-transparent"
       >
-        <div class="mb-90px flex justify-between px-10 pt-10">
+        <div class="mb-90px flex justify-between px-10 pt-10 md:hidden">
           <div class="text-13px text-custom-pink">LOGO</div>
           <button data-back class="h-[10px] w-[6px] bg-back"></button>
         </div>
-        <ul class="flex flex-col gap-9 pl-10 pb-36">
+        <ul class="flex flex-col gap-9 pl-10 pb-36 md:pl-0 md:pb-0 md:flex-row md:gap-7">
           <li class="links">
             <span class="links-icon">
               <img src="./src/images/icons/home.svg" alt="Home icon" />
@@ -50,11 +50,14 @@
             </span>
             <a href="#">Contact</a>
           </li>
-          <li class="links">
+          <li class="links md:hidden">
             <span class="links-icon">
               <img src="./src/images/icons/avatar.png" alt="Profile icon" />
             </span>
             <a href="#">Profile</a>
+          </li>
+          <li class="hidden md:flex md:items-center">
+            <img src="./src/images/icons/avatar.png" alt="Profile icon" />
           </li>
         </ul>
         <div
@@ -99,8 +102,14 @@
           </div>
         </div>
       </nav>
-      <div class="text-13px font-bold text-light-cyan-blue">LOGO</div>
-      <div><img src="./src/images/icons/avatar.png" alt="" /></div>
+      <div
+        class="text-13px font-bold text-light-cyan-blue md:order-1 md:text-custom-pink"
+      >
+        LOGO
+      </div>
+      <div class="md:hidden">
+        <img src="./src/images/icons/avatar.png" alt="" />
+      </div>
     </header>
 
     <main>

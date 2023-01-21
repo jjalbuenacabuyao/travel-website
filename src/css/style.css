@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 .links {
-  @apply flex gap-30px;
+  @apply flex gap-30px items-center;
 }
 
 .links-icon {
-  @apply aspect-square w-4;
+  @apply aspect-square w-4 md:hidden;
 }
 
 .travel-text-wrapper {
