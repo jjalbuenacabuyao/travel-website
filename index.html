@@ -9,23 +9,23 @@
     <script src="./src/js/index.js" defer></script>
     <title>Travel</title>
   </head>
-  <body class="text-base font-helvetica text-white">
-    <header class="p-header relative flex items-center justify-between">
+  <body class="font-helvetica text-base text-white">
+    <header class="relative flex items-center justify-between p-header">
       <button
         id="nav-toggler"
         aria-controls="nav"
-        class="bg-menu w-4 h-[14px]"
+        class="h-[14px] w-4 bg-menu"
       ></button>
       <nav
         id="nav"
         data-visible="false"
-        class="fixed inset-0 -translate-x-full text-11px uppercase font-bold text-d-grayish-blue/50 w-[76.5%] bg-off-white overflow-y-scroll z-50 transition-all"
+        class="fixed inset-0 z-50 w-[76.5%] -translate-x-full overflow-y-scroll bg-off-white text-11px font-bold uppercase text-d-grayish-blue/50 transition-all"
       >
-        <div class="mb-90px pt-10 px-10 flex justify-between">
+        <div class="mb-90px flex justify-between px-10 pt-10">
           <div class="text-13px text-custom-pink">LOGO</div>
-          <button data-back class="bg-back w-[6px] h-[10px]"></button>
+          <button data-back class="h-[10px] w-[6px] bg-back"></button>
         </div>
-        <ul class="pl-10 pb-36 flex flex-col gap-9">
+        <ul class="flex flex-col gap-9 pl-10 pb-36">
           <li class="links">
             <span class="links-icon">
               <img src="./src/images/icons/home.svg" alt="Home icon" />
@@ -58,10 +58,10 @@
           </li>
         </ul>
         <div
-          class="bg-black/[0.23] px-10 pt-14 pb-10 text-white/[0.23] flex flex-col gap-16 md:hidden"
+          class="flex flex-col gap-16 bg-black/[0.23] px-10 pt-14 pb-10 text-white/[0.23] md:hidden"
         >
           <ul
-            class="grid grid-cols-2 grid-rows-4 leading-none gap-y-8 gap-x-12 grid-flow-col"
+            class="grid grid-flow-col grid-cols-2 grid-rows-4 gap-y-8 gap-x-12 leading-none"
           >
             <li><a href="#">About</a></li>
             <li><a href="#">Help</a></li>
@@ -99,7 +99,7 @@
           </div>
         </div>
       </nav>
-      <div class="font-bold text-13px text-light-cyan-blue">LOGO</div>
+      <div class="text-13px font-bold text-light-cyan-blue">LOGO</div>
       <div><img src="./src/images/icons/avatar.png" alt="" /></div>
     </header>
 
@@ -108,19 +108,19 @@
       <section>
         <article class="grid grid-cols-1 grid-rows-1">
           <div
-            class="row-start-1 col-start-1 text-white text-2xl z-10 px-6 py-10 bg-black/[0.2]"
+            class="z-10 col-start-1 row-start-1 bg-black/[0.2] px-6 py-10 text-2xl text-white"
           >
-            <h1 class="uppercase pb-9 border-b-2 border-b-white font-bold">
+            <h1 class="border-b-2 border-b-white pb-9 font-bold uppercase">
               World news
             </h1>
             <h2 class="pt-11 pb-14 font-bold">Amazing places in America</h2>
-            <p class="text-base pb-5">
+            <p class="pb-5 text-base">
               For some reason — this country, this city, this neighborhood, this
               particular street — is the place you are living a majority of your
               life in.
             </p>
             <button
-              class="text-11px uppercase py-4 px-5 bg-custom-pink leading-none rounded-md"
+              class="rounded-md bg-custom-pink py-4 px-5 text-11px uppercase leading-none"
             >
               Learn more
             </button>
@@ -128,20 +128,14 @@
           <img
             src="./src/images/hero.jpg"
             alt=""
-            class="h-full row-start-1 col-start-1 object-cover"
+            class="col-start-1 row-start-1 h-full object-cover"
           />
         </article>
 
         <!-- More News -->
         <article class="px-6 pt-11 pb-10">
-          <div
-            class="more-news"
-          >
-            <h2
-              class="section-title"
-            >
-              More news
-            </h2>
+          <div class="more-news">
+            <h2 class="section-title">More news</h2>
             <div class="arrows">
               <img
                 src="./src/images/icons/arrow back left.svg"
@@ -150,12 +144,10 @@
               <img src="./src/images/icons/arrow.svg" alt="arrow right" />
             </div>
           </div>
-          <div class="text-light-cyan-blue flex flex-col gap-10 pt-9">
+          <div class="flex flex-col gap-10 pt-9 text-light-cyan-blue">
             <!-- Travel -->
             <div class="travel-text-wrapper">
-              <h3 class="news-heading">
-                Travel
-              </h3>
+              <h3 class="news-heading">Travel</h3>
               <h4 class="news-title">Article title</h4>
               <p>
                 Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad
@@ -168,9 +160,7 @@
             </div>
             <!-- Technology -->
             <div class="travel-text-wrapper">
-              <h3 class="news-heading">
-                Technology
-              </h3>
+              <h3 class="news-heading">Technology</h3>
               <h4 class="news-title">Article title</h4>
               <p>
                 Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad
@@ -186,10 +176,8 @@
       </section>
 
       <!-- Trending -->
-      <article class="px-6 pt-11 pb-9 text-custom-black bg-off-white">
-        <div
-          class="trending"
-        >
+      <article class="bg-off-white px-6 pt-11 pb-9 text-custom-black">
+        <div class="trending">
           <h2 class="section-title">Trending</h2>
           <div class="arrows">
             <img
