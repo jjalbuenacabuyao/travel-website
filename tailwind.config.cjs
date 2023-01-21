@@ -9,6 +9,7 @@ module.exports = {
       padding: {
         "header": "clamp(1rem, 0.76rem + 1.02vw, 1.25rem)",
         "24px-80px": "clamp(1.5rem, -1.84rem + 14.25vw, 5rem)",
+        "40px-80px": "clamp(2.5rem, 0.12rem + 10.18vw, 5rem)",
       },
       fontFamily: {
         "helvetica": ["Helvetica", "sans-serif"],
