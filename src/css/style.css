@@ -65,7 +65,7 @@
 }
 
 .hp-text-wrapper {
-  @apply z-10 px-6 py-8 bg-black/[0.2];
+  @apply z-10 bg-black/[0.2] px-6 py-8;
 }
 
 .hp-text-wrapper > h2 {
@@ -73,7 +73,7 @@
 }
 
 .hp-text-wrapper > h3 {
-  @apply mb-11 text-2xl leading-none font-bold;
+  @apply mb-11 text-2xl font-bold leading-none;
 }
 
 .hp-text-wrapper > p {
@@ -81,10 +81,10 @@
 }
 
 .hp-cover-img {
-  @apply object-cover h-full;
+  @apply h-full object-cover;
 }
 
 .hp-cover-img,
 .hp-text-wrapper {
-  @apply row-start-1 col-start-1 rounded-md;
+  @apply col-start-1 row-start-1 rounded-md;
 }
