@@ -7,7 +7,7 @@
 }
 
 .links-icon {
-  @apply w-4 aspect-square;
+  @apply aspect-square w-4;
 }
 
 .travel-text-wrapper {
@@ -15,11 +15,11 @@
 }
 
 .news-heading {
-  @apply uppercase text-custom-pink font-bold leading-none;
+  @apply font-bold uppercase leading-none text-custom-pink;
 }
 
 .news-title {
-  @apply text-custom-black leading-none font-bold;
+  @apply font-bold leading-none text-custom-black;
 }
 
 .travel-text-wrapper > p {
@@ -35,7 +35,7 @@
 }
 
 .section-title {
-  @apply uppercase text-custom-black text-2xl font-bold leading-none;
+  @apply text-2xl font-bold uppercase leading-none text-custom-black;
 }
 
 .arrows {
@@ -44,11 +44,11 @@
 
 .more-news,
 .trending {
-  @apply flex items-center justify-between pb-9 border-b-2 border-b-[#EBEDED];
+  @apply flex items-center justify-between border-b-2 border-b-[#EBEDED] pb-9;
 }
 
 .trending-card {
-  @apply flex flex-col gap-5 bg-white px-6 py-9 rounded-b-2xl shadow-sm shadow-slate-300;
+  @apply flex flex-col gap-5 rounded-b-2xl bg-white px-6 py-9 shadow-sm shadow-slate-300;
 }
 
 .trending-card > h3 {
