@@ -43,7 +43,8 @@
 }
 
 .more-news,
-.trending {
+.trending,
+.happening {
   @apply flex items-center justify-between border-b-2 border-b-[#EBEDED] pb-9;
 }
 
@@ -57,4 +58,33 @@
 
 .trending-card > p {
   @apply font-acumin text-13px text-light-cyan-blue;
+}
+
+.happening-card {
+  @apply grid grid-cols-1 grid-rows-1;
+}
+
+.hp-text-wrapper {
+  @apply z-10 px-6 py-8 bg-black/[0.2];
+}
+
+.hp-text-wrapper > h2 {
+  @apply mb-16 uppercase leading-none;
+}
+
+.hp-text-wrapper > h3 {
+  @apply mb-11 text-2xl leading-none font-bold;
+}
+
+.hp-text-wrapper > p {
+  @apply mb-3;
+}
+
+.hp-cover-img {
+  @apply object-cover h-full;
+}
+
+.hp-cover-img,
+.hp-text-wrapper {
+  @apply row-start-1 col-start-1 rounded-md;
 }
