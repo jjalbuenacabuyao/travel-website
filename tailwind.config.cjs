@@ -25,10 +25,12 @@ module.exports = {
         "custom-black": "#202124",
         "d-grayish-blue": "#343638",
         "off-white": "#F6F8F9",
+        "footer-text": "#CBD0D3",
       },
       backgroundImage: {
         "menu": "url(../images/icons/menu-icon.svg)",
         "back": "url(../images/icons/arrow back left.svg)",
+        "send": "url(../images/icons/send.svg)",
       },
       margin: {
         "90px": "5.625rem",
