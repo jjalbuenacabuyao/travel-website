@@ -29,7 +29,7 @@ module.exports = {
       },
       backgroundImage: {
         "menu": "url(../images/icons/menu-icon.svg)",
-        "back": "url(../images/icons/arrow back left.svg)",
+        "back": "url(../images/icons/arrowbackleft.svg)",
         "send": "url(../images/icons/send.svg)",
       },
       margin: {
