@@ -72,11 +72,11 @@
   @apply mb-16 uppercase leading-none;
 }
 
-.hp-text-wrapper > h3 {
+.hp-text-wrapper h3 {
   @apply mb-11 text-2xl font-bold leading-none;
 }
 
-.hp-text-wrapper > p {
+.hp-text-wrapper p {
   @apply mb-3;
 }
 
