@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.typekit.net/mic7ono.css" />
+    
+    
+    <title>Travel</title>
+    <script type="module" crossorigin src="/assets/index-54deaa68.js"></script>
+    <link rel="stylesheet" href="/assets/index-56e67ec8.css">
+  </head>
+  <body class="font-helvetica text-base text-white">
+    <header class="relative flex items-center justify-between p-header">
+      <button
+        id="nav-toggler"
+        aria-controls="nav"
+        class="h-[14px] w-4 bg-menu md:hidden"
+      ></button>
+      <nav
+        id="nav"
+        data-visible="false"
+        class="fixed inset-0 z-50 w-[76.5%] -translate-x-full overflow-y-scroll bg-off-white text-11px font-bold uppercase text-d-grayish-blue/50 transition-all md:static md:order-2 md:w-auto md:translate-x-0 md:bg-transparent"
+      >
+        <div class="mb-90px flex justify-between px-10 pt-10 md:hidden">
+          <div class="text-13px text-custom-pink">LOGO</div>
+          <button data-back class="h-[10px] w-[6px] bg-back"></button>
+        </div>
+        <ul
+          class="flex flex-col gap-9 pl-10 pb-36 md:flex-row md:gap-7 md:pl-0 md:pb-0"
+        >
+          <li class="links">
+            <span class="links-icon">
+              <img src="/assets/home-fd344269.svg" alt="Home icon" />
+            </span>
+            <a href="#" class="text-d-grayish-blue">Home</a>
+          </li>
+          <li class="links">
+            <span class="links-icon">
+              <img src="/assets/discover-339f17b2.svg" alt="Discovery icon" />
+            </span>
+            <a href="#">Discovery</a>
+          </li>
+          <li class="links">
+            <span class="links-icon">
+              <img src="/assets/photos-8e101759.svg" alt="Photos icon" />
+            </span>
+            <a href="#">Photos</a>
+          </li>
+          <li class="links">
+            <span class="links-icon">
+              <img src="/assets/mail-22ce6a30.svg" alt="Contact icon icon" />
+            </span>
+            <a href="#">Contact</a>
+          </li>
+          <li class="links md:hidden">
+            <span class="links-icon">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAA4JJREFUOE9lk21oW1Ucxp+b+5omuTfJTdMkS9MmTWO2ZWnqXkSxrB0i3YfZSsfYGFVEEBF0GegQNkg2FdQv6dSxsX6ZaNksgqtj1O6L6VSMW2m76exsttL3bknaJOvNS03SeC20FD1wPpzD+T885+H3EPjPCoXO+R5PjbVRJNXMsKSP51TwPNs0quSY8N+51b6WF1tGN48Qmw+Dkd+PXb98vosolcEyDDQsgR07m5CVcmB5AYVMJpXJPA4effPY2fW5DYE/J5e+u3L+w3YpmQLL0eAUCni9jTCo9VDqRKh1RtAqDrHZKWQW566+cLjz5X9F1gSi85J/duJ+6MY33SgWV0BRNHiawdPe3VCrtRCMFqh0etmFGgqUMdLbjYYjncctVnsXMT4r+RRkeaT/ykXEpidQKsh2K9TQ8iLqt9RBW2mG0WpDBa8CxTIgZWd/fP8VHK1tqSpzTQsRXVgOyrYC/T2foSj/ndcIUMnb6nChtJRHfDEFh8uNht0NoBgaBElg+vbPMPt8EI3m08TEIyn8Y9/Xe+ce3AMnP6CZCgiGKmzf9Rx6znWjXg7RoeewtcGDbDaHoVvD0JMreOZgB3R63SDxy/B4MnLtS20unYRBrESpWILRXo/te55H7N4DqEQT5qN34XQ5EV/OYyaRQXxkAIfffQ+VJkuKuPB5KJVPxYXlxCJMli2gSBI6qwN1bi9oKQ+wSkyMRmCy1aJGtp1NSZj8bQDu1gPQ6gxpInTmVJhGee/SowXYnU6QFAW92QaD1gJezaOwWsbkrZuobdyFaq8XBSmL4WuXsaP9IATROEic/eBUkCgUArHZGbi3PrUWlGhxAEtPYHRuQ6msQOJhFM49O6EzmVDMZdEd8OPQiQDMDtdp4uKnH/nSifnwwtSU4PE0QtDzMkQcGIKEptqOYjIDDc3LudSAs4mYuTOEC2f8eC0QSnuamn1rIH0RPOGfiY6Ham11sLi3IXZ/DGbRAK3TBawAPFQQzJVYYQro+eQkck+S2PfqW8dbX3m9awPlk0c7rpZopm3fSx1Y/GsMrAyUxloDXbULVTY7Vlfz+Kn3Eh4O/QqW5fre/3agfQPl9WJ07m/2d77xdjA3Ny0oZcplQmX6lEik07h9sx9ciUiLmorgOz3Xu/5XpvWLG729vkIy3q7muGaiXPLF5fKEI4OjqrwUBsVd+viHyOTmBv8DfT1AMl+IrFIAAAAASUVORK5CYII=" alt="Profile icon" />
+            </span>
+            <a href="#">Profile</a>
+          </li>
+          <li class="hidden md:flex md:items-center">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAA4JJREFUOE9lk21oW1Ucxp+b+5omuTfJTdMkS9MmTWO2ZWnqXkSxrB0i3YfZSsfYGFVEEBF0GegQNkg2FdQv6dSxsX6ZaNksgqtj1O6L6VSMW2m76exsttL3bknaJOvNS03SeC20FD1wPpzD+T885+H3EPjPCoXO+R5PjbVRJNXMsKSP51TwPNs0quSY8N+51b6WF1tGN48Qmw+Dkd+PXb98vosolcEyDDQsgR07m5CVcmB5AYVMJpXJPA4effPY2fW5DYE/J5e+u3L+w3YpmQLL0eAUCni9jTCo9VDqRKh1RtAqDrHZKWQW566+cLjz5X9F1gSi85J/duJ+6MY33SgWV0BRNHiawdPe3VCrtRCMFqh0etmFGgqUMdLbjYYjncctVnsXMT4r+RRkeaT/ykXEpidQKsh2K9TQ8iLqt9RBW2mG0WpDBa8CxTIgZWd/fP8VHK1tqSpzTQsRXVgOyrYC/T2foSj/ndcIUMnb6nChtJRHfDEFh8uNht0NoBgaBElg+vbPMPt8EI3m08TEIyn8Y9/Xe+ce3AMnP6CZCgiGKmzf9Rx6znWjXg7RoeewtcGDbDaHoVvD0JMreOZgB3R63SDxy/B4MnLtS20unYRBrESpWILRXo/te55H7N4DqEQT5qN34XQ5EV/OYyaRQXxkAIfffQ+VJkuKuPB5KJVPxYXlxCJMli2gSBI6qwN1bi9oKQ+wSkyMRmCy1aJGtp1NSZj8bQDu1gPQ6gxpInTmVJhGee/SowXYnU6QFAW92QaD1gJezaOwWsbkrZuobdyFaq8XBSmL4WuXsaP9IATROEic/eBUkCgUArHZGbi3PrUWlGhxAEtPYHRuQ6msQOJhFM49O6EzmVDMZdEd8OPQiQDMDtdp4uKnH/nSifnwwtSU4PE0QtDzMkQcGIKEptqOYjIDDc3LudSAs4mYuTOEC2f8eC0QSnuamn1rIH0RPOGfiY6Ham11sLi3IXZ/DGbRAK3TBawAPFQQzJVYYQro+eQkck+S2PfqW8dbX3m9awPlk0c7rpZopm3fSx1Y/GsMrAyUxloDXbULVTY7Vlfz+Kn3Eh4O/QqW5fre/3agfQPl9WJ07m/2d77xdjA3Ny0oZcplQmX6lEik07h9sx9ciUiLmorgOz3Xu/5XpvWLG729vkIy3q7muGaiXPLF5fKEI4OjqrwUBsVd+viHyOTmBv8DfT1AMl+IrFIAAAAASUVORK5CYII=" alt="Profile icon" />
+          </li>
+        </ul>
+        <div
+          class="flex flex-col gap-16 bg-black/[0.23] px-10 pt-14 pb-10 text-white/[0.23] md:hidden"
+        >
+          <ul
+            class="grid grid-flow-col grid-cols-2 grid-rows-4 gap-y-8 gap-x-12 leading-none"
+          >
+            <li><a href="#">About</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Guidelines</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Advertise</a></li>
+            <li><a href="#">Integrations</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+          <div>
+            <ul class="flex gap-5">
+              <li>
+                <img
+                  src="/assets/instagram-1ff30d77.svg"
+                  alt="Icon of instagram"
+                />
+              </li>
+              <li>
+                <img
+                  src="/assets/twitter-9656eda9.svg"
+                  alt="Icon of twitter"
+                />
+              </li>
+              <li>
+                <img
+                  src="/assets/facebook-3f8e2c5d.svg"
+                  alt="Icon of facebook"
+                />
+              </li>
+              <li>
+                <img src="/assets/web-50945819.svg" alt="Icon of Internet" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div
+        class="text-13px font-bold text-light-cyan-blue md:order-1 md:text-custom-pink"
+      >
+        LOGO
+      </div>
+      <div class="md:hidden">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAA4JJREFUOE9lk21oW1Ucxp+b+5omuTfJTdMkS9MmTWO2ZWnqXkSxrB0i3YfZSsfYGFVEEBF0GegQNkg2FdQv6dSxsX6ZaNksgqtj1O6L6VSMW2m76exsttL3bknaJOvNS03SeC20FD1wPpzD+T885+H3EPjPCoXO+R5PjbVRJNXMsKSP51TwPNs0quSY8N+51b6WF1tGN48Qmw+Dkd+PXb98vosolcEyDDQsgR07m5CVcmB5AYVMJpXJPA4effPY2fW5DYE/J5e+u3L+w3YpmQLL0eAUCni9jTCo9VDqRKh1RtAqDrHZKWQW566+cLjz5X9F1gSi85J/duJ+6MY33SgWV0BRNHiawdPe3VCrtRCMFqh0etmFGgqUMdLbjYYjncctVnsXMT4r+RRkeaT/ykXEpidQKsh2K9TQ8iLqt9RBW2mG0WpDBa8CxTIgZWd/fP8VHK1tqSpzTQsRXVgOyrYC/T2foSj/ndcIUMnb6nChtJRHfDEFh8uNht0NoBgaBElg+vbPMPt8EI3m08TEIyn8Y9/Xe+ce3AMnP6CZCgiGKmzf9Rx6znWjXg7RoeewtcGDbDaHoVvD0JMreOZgB3R63SDxy/B4MnLtS20unYRBrESpWILRXo/te55H7N4DqEQT5qN34XQ5EV/OYyaRQXxkAIfffQ+VJkuKuPB5KJVPxYXlxCJMli2gSBI6qwN1bi9oKQ+wSkyMRmCy1aJGtp1NSZj8bQDu1gPQ6gxpInTmVJhGee/SowXYnU6QFAW92QaD1gJezaOwWsbkrZuobdyFaq8XBSmL4WuXsaP9IATROEic/eBUkCgUArHZGbi3PrUWlGhxAEtPYHRuQ6msQOJhFM49O6EzmVDMZdEd8OPQiQDMDtdp4uKnH/nSifnwwtSU4PE0QtDzMkQcGIKEptqOYjIDDc3LudSAs4mYuTOEC2f8eC0QSnuamn1rIH0RPOGfiY6Ham11sLi3IXZ/DGbRAK3TBawAPFQQzJVYYQro+eQkck+S2PfqW8dbX3m9awPlk0c7rpZopm3fSx1Y/GsMrAyUxloDXbULVTY7Vlfz+Kn3Eh4O/QqW5fre/3agfQPl9WJ07m/2d77xdjA3Ny0oZcplQmX6lEik07h9sx9ciUiLmorgOz3Xu/5XpvWLG729vkIy3q7muGaiXPLF5fKEI4OjqrwUBsVd+viHyOTmBv8DfT1AMl+IrFIAAAAASUVORK5CYII=" alt="" />
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section>
+        <article class="grid grid-cols-1 grid-rows-1">
+          <div
+            class="z-10 col-start-1 row-start-1 bg-black/[0.2] px-24px-80px py-40px-80px text-2xl text-white"
+          >
+            <h1 class="border-b-2 border-b-white pb-9 font-bold uppercase">
+              World news
+            </h1>
+            <h2 class="pt-11 pb-14 font-bold">Amazing places in America</h2>
+            <p class="pb-5 text-base">
+              For some reason — this country, this city, this neighborhood, this
+              particular street — is the place you are living a majority of your
+              life in.
+            </p>
+            <button
+              class="rounded-md bg-custom-pink py-4 px-5 text-11px uppercase leading-none"
+            >
+              Learn more
+            </button>
+          </div>
+          <img
+            src="/assets/hero-c57ee01a.jpg"
+            alt=""
+            class="col-start-1 row-start-1 h-full object-cover"
+          />
+        </article>
+
+        <!-- More News -->
+        <article class="px-24px-80px pt-11 pb-10">
+          <div class="more-news">
+            <h2 class="section-title">More news</h2>
+            <div class="arrows">
+              <img
+                src="./src/images/icons/arrow back left.svg"
+                alt="arrow left"
+              />
+              <img src="/assets/arrow-5ec3440c.svg" alt="arrow right" />
+            </div>
+          </div>
+          <div class="flex flex-col gap-10 pt-9 text-light-cyan-blue">
+            <!-- Travel -->
+            <div class="travel-text-wrapper">
+              <h3 class="news-heading">Travel</h3>
+              <h4 class="news-title">Article title</h4>
+              <p>
+                Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad
+                has appareat…
+              </p>
+              <div class="time">
+                <img src="/assets/time-ad62a57e.svg" alt="icon of a clock" />
+                <p>2m ago</p>
+              </div>
+            </div>
+            <!-- Technology -->
+            <div class="travel-text-wrapper">
+              <h3 class="news-heading">Technology</h3>
+              <h4 class="news-title">Article title</h4>
+              <p>
+                Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad
+                has appareat…
+              </p>
+              <div class="time">
+                <img src="/assets/time-ad62a57e.svg" alt="icon of a clock" />
+                <p>1h ago</p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- Trending -->
+      <section>
+        <article class="px-24px-80px pt-11 pb-9 text-custom-black">
+          <div class="trending">
+            <h2 class="section-title">Trending</h2>
+            <div class="arrows">
+              <img
+                src="./src/images/icons/arrow back left.svg"
+                alt="arrow left"
+              />
+              <img src="/assets/arrow-5ec3440c.svg" alt="arrow right" />
+            </div>
+          </div>
+
+          <div class="mb-9">
+            <img src="/assets/trending1-c4b102bc.jpg" alt="" />
+            <div class="trending-card">
+              <h3>Dolore magna aliqua</h3>
+              <p class="font-acumin text-13px text-light-cyan-blue">
+                Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad
+                has appareat.
+              </p>
+              <div class="time">
+                <img src="/assets/time-ad62a57e.svg" alt="icon of a clock" />
+                <p>2m ago</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <img src="/assets/trending2-1393c58b.jpg" alt="" />
+            <div class="trending-card">
+              <h3>Dolore magna aliqua</h3>
+              <p>
+                Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad
+                has appareat.
+              </p>
+              <div class="time">
+                <img src="/assets/time-ad62a57e.svg" alt="icon of a clock" />
+                <p>1h ago</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hidden">
+            <img src="/assets/trending3-e030ab46.jpg" alt="" />
+            <div class="trending-card">
+              <h3>Morbi eleifend a libero</h3>
+              <p>
+                Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad
+                has appareat.
+              </p>
+              <div class="time">
+                <img src="/assets/time-ad62a57e.svg" alt="icon of a clock" />
+                <p>1h ago</p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- Happening Now -->
+      <section>
+        <article class="px-24px-80px pb-20">
+          <div class="happening">
+            <h2 class="section-title">Happening now</h2>
+            <div class="arrows">
+              <img
+                src="./src/images/icons/arrow back left.svg"
+                alt="arrow left"
+              />
+              <img src="/assets/arrow-5ec3440c.svg" alt="arrow right" />
+            </div>
+          </div>
+
+          <div class="happening-card mb-10">
+            <img
+              src="/assets/happening1-31ca293e.jpg"
+              alt=""
+              class="hp-cover-img"
+            />
+            <div class="hp-text-wrapper">
+              <h2>City</h2>
+              <div>
+                <h3>Large article title mobile</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, in eam odio amet, vix id nullam
+                  detracto, vidit vituperatoribus duo id. Affert detraxit
+                </p>
+                <div class="time">
+                  <img
+                    src="/assets/time-ad62a57e.svg"
+                    alt="icon of a clock"
+                  />
+                  <p>1h ago</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="happening-card">
+            <img
+              src="/assets/happening2-dc3b7945.jpg"
+              alt=""
+              class="hp-cover-img"
+            />
+            <div class="hp-text-wrapper">
+              <h2>Travel</h2>
+              <div>
+                <h3>Large article title mobile</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, in eam odio amet, vix id nullam
+                  detracto, vidit vituperatoribus duo id. Affert detraxit
+                </p>
+                <div class="time">
+                  <img
+                    src="/assets/time-ad62a57e.svg"
+                    alt="icon of a clock"
+                  />
+                  <p>1h ago</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- Cards -->
+      <section>
+        <article
+          class="flex flex-col gap-10 px-24px-80px pb-6 text-custom-black"
+        >
+          <div>
+            <img src="/assets/card1-e87a7716.jpg" alt="" class="cards-img" />
+            <div>
+              <h2>Small Title</h2>
+              <div class="time">
+                <img src="/assets/time-ad62a57e.svg" alt="icon of a clock" />
+                <p>3h ago by <span class="author">Worldnews</span></p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <img src="/assets/card2-e25dd4fa.jpg" alt="" class="cards-img" />
+            <div>
+              <h2>Small Title</h2>
+              <div class="time">
+                <img src="/assets/time-ad62a57e.svg" alt="icon of a clock" />
+                <p>4h ago by <span class="author">Days</span></p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <img src="/assets/card3-605507ff.jpg" alt="" class="cards-img" />
+            <div>
+              <h2>Small Title</h2>
+              <div class="time">
+                <img src="/assets/time-ad62a57e.svg" alt="icon of a clock" />
+                <p>4h ago by <span class="author">Monica</span></p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="hidden bg-light-cyan-blue px-24px-80px py-14 md:block">
+      <div class="text-white grid grid-rows-2 grid-cols-1 gap-y-12">
+        <div class="grid grid-cols-2">
+          <div class="text-13px font-bold">LOGO</div>
+          <ul class="grid grid-flow-col grid-cols-3 grid-rows-4 text-footer-text">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Discovery</a></li>
+            <li><a href="#">Photos</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Guidlines</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Advertise</a></li>
+            <li><a href="#">Integration</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+
+        <div class="grid grid-cols-2 items-center">
+          <div class="flex flex-col gap-4">
+            <form action="" class="relative h-9 w-[90%]">
+              <label
+                for="email"
+                class="absolute text-13px top-0 bottom-0 left-5 my-auto w-[40.02px] leading-[0] h-max text-footer-text/50"
+                >Email</label
+              >
+              <input
+                type="email"
+                class="h-full w-full rounded-md border-2 border-white/10 bg-transparent"
+                name="email"
+                id="email"
+              />
+              <button class="absolute aspect-square w-4 bg-send top-0 bottom-0 right-5 my-auto"></button>
+            </form>
+            <p class="text-11px text-footer-text">Stay in touch with us for the freshest products!</p>
+          </div>
+
+          <div class="justify-self-end">
+            <ul class="flex gap-7">
+              <li>
+                <img
+                  src="/assets/instagram-1ff30d77.svg"
+                  alt="Icon of instagram"
+                />
+              </li>
+              <li>
+                <img
+                  src="/assets/twitter-9656eda9.svg"
+                  alt="Icon of twitter"
+                />
+              </li>
+              <li>
+                <img
+                  src="/assets/facebook-3f8e2c5d.svg"
+                  alt="Icon of facebook"
+                />
+              </li>
+              <li>
+                <img src="/assets/web-50945819.svg" alt="Icon of Internet" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
