@@ -27,7 +27,7 @@
 }
 
 .time {
-  @apply flex gap-3;
+  @apply flex gap-3 items-center;
 }
 
 .time > p {
@@ -76,7 +76,7 @@
   @apply mb-11 text-2xl font-bold leading-none;
 }
 
-.hp-text-wrapper p {
+.hp-text-wrapper > div > p {
   @apply mb-3;
 }
 
@@ -87,4 +87,12 @@
 .hp-cover-img,
 .hp-text-wrapper {
   @apply col-start-1 row-start-1 rounded-md;
+}
+
+.cards-img {
+  @apply mb-6;
+}
+
+.author {
+  @apply underline;
 }
