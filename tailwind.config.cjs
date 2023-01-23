@@ -6,12 +6,17 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        "lg": "1440px",
+      },
       padding: {
         "header": "clamp(1rem, 0.76rem + 1.02vw, 1.25rem)",
         "24px-80px": "clamp(1.5rem, -1.84rem + 14.25vw, 5rem)",
         "40px-80px": "clamp(2.5rem, 0.12rem + 10.18vw, 5rem)",
         "24px-44px": "clamp(1.5rem, 0.31rem + 5.09vw, 2.75rem)",
         "32px-44px": "clamp(2rem, 1.29rem + 3.06vw, 2.75rem)",
+        "80px-140px": "clamp(5rem, 0.72rem + 8.93vw, 8.75rem)",
+        "80px-180px": "clamp(5rem, -2.14rem + 14.88vw, 11.25rem)",
       },
       fontFamily: {
         "helvetica": ["Helvetica", "sans-serif"],
