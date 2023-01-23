@@ -159,7 +159,9 @@
               <img src="./src/images/icons/arrow.svg" alt="arrow right" />
             </div>
           </div>
-          <div class="flex flex-col gap-10 pt-9 text-light-cyan-blue">
+          <div
+            class="flex flex-col gap-10 pt-9 text-light-cyan-blue md:flex-row md:items-center md:justify-between"
+          >
             <!-- Travel -->
             <div class="travel-text-wrapper">
               <h3 class="news-heading">Travel</h3>
@@ -204,47 +206,58 @@
             </div>
           </div>
 
-          <div class="mb-9">
-            <img src="./src/images/trending1.jpg" alt="" />
-            <div class="trending-card">
-              <h3>Dolore magna aliqua</h3>
-              <p class="font-acumin text-13px text-light-cyan-blue">
-                Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad
-                has appareat.
-              </p>
-              <div class="time">
-                <img src="./src/images/icons/time.svg" alt="icon of a clock" />
-                <p>2m ago</p>
+          <div class="flex flex-col gap-9 pt-9 md:flex-row">
+            <div>
+              <img src="./src/images/trending1.jpg" alt="" />
+              <div class="trending-card">
+                <h3>Dolore magna aliqua</h3>
+                <p class="font-acumin text-13px text-light-cyan-blue">
+                  Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad
+                  has appareat.
+                </p>
+                <div class="time">
+                  <img
+                    src="./src/images/icons/time.svg"
+                    alt="icon of a clock"
+                  />
+                  <p>2m ago</p>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div>
-            <img src="./src/images/trending2.jpg" alt="" />
-            <div class="trending-card">
-              <h3>Dolore magna aliqua</h3>
-              <p>
-                Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad
-                has appareat.
-              </p>
-              <div class="time">
-                <img src="./src/images/icons/time.svg" alt="icon of a clock" />
-                <p>1h ago</p>
+            <div>
+              <img src="./src/images/trending2.jpg" alt="" />
+              <div class="trending-card">
+                <h3>Dolore magna aliqua</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad
+                  has appareat.
+                </p>
+                <div class="time">
+                  <img
+                    src="./src/images/icons/time.svg"
+                    alt="icon of a clock"
+                  />
+                  <p>1h ago</p>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="hidden">
-            <img src="./src/images/trending3.jpg" alt="" />
-            <div class="trending-card">
-              <h3>Morbi eleifend a libero</h3>
-              <p>
-                Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad
-                has appareat.
-              </p>
-              <div class="time">
-                <img src="./src/images/icons/time.svg" alt="icon of a clock" />
-                <p>1h ago</p>
+            <div class="hidden">
+              <img src="./src/images/trending3.jpg" alt="" />
+              <div class="trending-card">
+                <h3>Morbi eleifend a libero</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad
+                  has appareat.
+                </p>
+                <div class="time">
+                  <img
+                    src="./src/images/icons/time.svg"
+                    alt="icon of a clock"
+                  />
+                  <p>1h ago</p>
+                </div>
               </div>
             </div>
           </div>
@@ -253,7 +266,7 @@
 
       <!-- Happening Now -->
       <section>
-        <article class="px-24px-80px pb-20">
+        <article class="px-24px-80px pb-20 md:pb-10">
           <div class="happening">
             <h2 class="section-title">Happening now</h2>
             <div class="arrows">
@@ -320,7 +333,7 @@
       <!-- Cards -->
       <section>
         <article
-          class="flex flex-col gap-10 px-24px-80px pb-6 text-custom-black"
+          class="flex flex-col items-center gap-10 px-24px-80px pb-6 text-custom-black md:flex-row md:pb-16"
         >
           <div>
             <img src="./src/images/card1.jpg" alt="" class="cards-img" />
@@ -344,7 +357,7 @@
             </div>
           </div>
 
-          <div>
+          <div class="md:hidden">
             <img src="./src/images/card3.jpg" alt="" class="cards-img" />
             <div>
               <h2>Small Title</h2>

@@ -65,15 +65,15 @@
 }
 
 .hp-text-wrapper {
-  @apply z-10 bg-black/[0.2] px-6 py-8;
+  @apply z-10 bg-black/[0.2] px-24px-44px py-32px-44px md:flex md:flex-col md:justify-between;
 }
 
 .hp-text-wrapper > h2 {
-  @apply mb-16 uppercase leading-none;
+  @apply mb-16 uppercase font-bold leading-none md:mb-0;
 }
 
 .hp-text-wrapper h3 {
-  @apply mb-11 text-2xl font-bold leading-none;
+  @apply mb-11 text-2xl font-bold leading-none md:mb-2;
 }
 
 .hp-text-wrapper > div > p {
