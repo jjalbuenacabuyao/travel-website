@@ -81,7 +81,7 @@
 }
 
 .hp-cover-img {
-  @apply h-full object-cover;
+  @apply h-full object-cover w-full md:max-h-[430px];
 }
 
 .hp-cover-img,
@@ -90,7 +90,7 @@
 }
 
 .cards-img {
-  @apply mb-6;
+  @apply mb-6 w-full;
 }
 
 .author {
