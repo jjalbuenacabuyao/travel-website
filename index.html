@@ -13,7 +13,7 @@
     />
     <title>Travel</title>
   </head>
-  <body class="font-helvetica text-base text-white">
+  <body class="font-helvetica text-base text-white max-w-[1800px] m-auto">
     <header class="relative flex items-center justify-between p-header">
       <button
         id="nav-toggler"
@@ -63,7 +63,7 @@
             </span>
             <a href="#">Profile</a>
           </li>
-          <li class="hidden md:flex md:items-center">
+          <li class="hidden w-8 aspect-square md:flex md:items-center">
             <img src="./src/images/icons/avatar.png" alt="Profile icon" />
           </li>
         </ul>
@@ -121,7 +121,7 @@
 
     <main class="animate__animated animate__fadeInUp">
       <!-- Hero Section -->
-      <section>
+      <section class="xl:grid xl:grid-cols-[60%_40%] xl:items-center">
         <article class="grid grid-cols-1 grid-rows-1">
           <div
             class="z-10 col-start-1 row-start-1 bg-black/[0.2] px-24px-80px py-40px-80px text-2xl text-white md:px-80px-140px md:py-80px-180px"
@@ -130,7 +130,7 @@
               World news
             </h1>
             <h2 class="pt-11 pb-14 font-bold">Amazing places in America</h2>
-            <p class="pb-5 text-base">
+            <p class="pb-5 text-base md:max-w-xl">
               For some reason — this country, this city, this neighborhood, this
               particular street — is the place you are living a majority of your
               life in.
@@ -149,7 +149,7 @@
         </article>
 
         <!-- More News -->
-        <article class="px-24px-80px pt-11 pb-10 md:px-80px-140px">
+        <article class="px-24px-80px pt-11 pb-10 md:px-80px-140px xl:py-0 xl:px-24">
           <div class="more-news">
             <h2 class="section-title">More news</h2>
             <div class="arrows">
@@ -161,7 +161,7 @@
             </div>
           </div>
           <div
-            class="flex flex-col gap-10 pt-9 text-light-cyan-blue md:flex-row md:items-center md:justify-between"
+            class="flex flex-col gap-10 pt-9 text-light-cyan-blue md:flex-row md:items-center md:justify-between xl:flex-col"
           >
             <!-- Travel -->
             <div class="travel-text-wrapper">
@@ -196,7 +196,7 @@
       <!-- Trending -->
       <section>
         <article class="px-24px-80px pt-11 pb-9 text-custom-black md:px-80px-140px">
-          <div class="trending">
+          <div class="trending md:border-0">
             <h2 class="section-title">Trending</h2>
             <div class="arrows">
               <img
@@ -207,7 +207,7 @@
             </div>
           </div>
 
-          <div class="flex flex-col gap-9 pt-9 md:flex-row md:justify-center">
+          <div class="flex flex-col gap-9 md:flex-row md:justify-center">
             <div class="w-full">
               <img src="./src/images/trending1.jpg" alt="" class="w-full"/>
               <div class="trending-card">
@@ -244,7 +244,7 @@
               </div>
             </div>
 
-            <div class="hidden w-full">
+            <div class="hidden w-full xl:block">
               <img src="./src/images/trending3.jpg" alt="" class="w-full"/>
               <div class="trending-card">
                 <h3>Morbi eleifend a libero</h3>
@@ -266,20 +266,19 @@
       </section>
 
       <!-- Happening Now -->
-      <section>
-        <article class="px-24px-80px pb-20 md:pb-10 md:px-80px-140px">
-          <div class="happening">
-            <h2 class="section-title">Happening now</h2>
-            <div class="arrows">
-              <img
-                src="./src/images/icons/arrowbackleft.svg"
-                alt="arrow left"
-              />
-              <img src="./src/images/icons/arrow.svg" alt="arrow right" />
-            </div>
+      <section class="xl:grid xl:grid-cols-[62.5%_auto] xl:gap-x-10 xl:pb-[6.25rem]">
+        <div class="happening xl:col-span-2 px-24px-80px md:px-80px-140px md:border-0">
+          <h2 class="section-title">Happening now</h2>
+          <div class="arrows">
+            <img
+              src="./src/images/icons/arrowbackleft.svg"
+              alt="arrow left"
+            />
+            <img src="./src/images/icons/arrow.svg" alt="arrow right" />
           </div>
-
-          <div class="happening-card mb-10">
+        </div>
+        <article class="px-24px-80px pb-20 md:pb-10 md:px-80px-140px xl:pr-0 xl:flex xl:flex-col xl:pb-0">
+          <div class="happening-card mb-10 xl:mb-10 xl:h-1/2">
             <img
               src="./src/images/happening1.jpg"
               alt=""
@@ -304,7 +303,7 @@
             </div>
           </div>
 
-          <div class="happening-card">
+          <div class="happening-card xl:h-1/2">
             <img
               src="./src/images/happening2.jpg"
               alt=""
@@ -329,12 +328,10 @@
             </div>
           </div>
         </article>
-      </section>
 
-      <!-- Cards -->
-      <section>
+        <!-- CARDS -->
         <article
-          class="flex flex-col items-center gap-10 px-24px-80px pb-6 text-custom-black md:flex-row md:pb-16 md:px-80px-140px md:justify-center"
+          class="flex flex-col items-center gap-10 px-24px-80px pb-6 text-custom-black md:flex-row md:pb-16 md:px-80px-140px md:justify-center xl:flex-col xl:pl-0 xl:gap-6 xl:pb-0"
         >
           <div class="w-full">
             <img src="./src/images/card1.jpg" alt="" class="cards-img" />
@@ -358,7 +355,7 @@
             </div>
           </div>
 
-          <div class="w-full md:hidden">
+          <div class="w-full md:hidden xl:block">
             <img src="./src/images/card3.jpg" alt="" class="cards-img" />
             <div>
               <h2>Small Title</h2>
@@ -373,7 +370,7 @@
     </main>
 
     <footer class="hidden bg-light-cyan-blue px-24px-80px py-14 md:block md:px-80px-140px">
-      <div class="grid grid-cols-1 grid-rows-2 gap-y-12 text-white">
+      <div class="grid grid-cols-1 grid-rows-2 gap-y-12 text-white xl:grid-cols-2 xl:grid-rows-1 xl:gap-14">
         <div class="grid grid-cols-2">
           <div class="text-13px font-bold">LOGO</div>
           <ul

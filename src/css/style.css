@@ -81,7 +81,7 @@
 }
 
 .hp-cover-img {
-  @apply h-full object-cover w-full md:max-h-[430px];
+  @apply h-full object-cover w-full md:max-h-[430px] xl:max-h-full xl:h-full;
 }
 
 .hp-cover-img,
