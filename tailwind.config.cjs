@@ -14,6 +14,7 @@ module.exports = {
         "32px-44px": "clamp(2rem, 1.29rem + 3.06vw, 2.75rem)",
         "80px-140px": "clamp(5rem, 0.72rem + 8.93vw, 8.75rem)",
         "80px-180px": "clamp(5rem, -2.14rem + 14.88vw, 11.25rem)",
+        "80px-320px": "clamp(5rem, -6.16rem + 23.26vw, 20rem)"
       },
       fontFamily: {
         "helvetica": ["Helvetica", "sans-serif"],
