@@ -5,12 +5,15 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://use.typekit.net/mic7ono.css" />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <title>Travel</title>
-    <script type="module" crossorigin src="./assets/index-54deaa68.js"></script>
-    <link rel="stylesheet" href="./assets/index-56e67ec8.css" />
+    <script type="module" crossorigin src="./assets/index-6d4bc946.js"></script>
+    <link rel="stylesheet" href="./assets/index-48b61f5b.css">
   </head>
-  <body class="font-helvetica text-base text-white">
+  <body class="font-helvetica text-base text-white max-w-[1800px] m-auto">
     <header class="relative flex items-center justify-between p-header">
       <button
         id="nav-toggler"
@@ -20,9 +23,10 @@
       <nav
         id="nav"
         data-visible="false"
-        class="fixed inset-0 z-50 w-[76.5%] -translate-x-full overflow-y-scroll bg-off-white text-11px font-bold uppercase text-d-grayish-blue/50 transition-all md:static md:order-2 md:w-auto md:translate-x-0 md:bg-transparent"
+        class="fixed inset-0 z-50 w-[76.5%] -translate-x-full overflow-y-scroll bg-off-white text-11px font-bold uppercase text-d-grayish-blue/50 transition-all md:static md:order-2 md:w-auto md:translate-x-0 md:bg-transparent md:overflow-y-hidden"
       >
         <div class="mb-90px flex justify-between px-10 pt-10 md:hidden">
+          <!-- LOGO -->
           <div class="text-13px text-custom-pink">LOGO</div>
           <button data-back class="h-[10px] w-[6px] bg-back"></button>
         </div>
@@ -55,18 +59,12 @@
           </li>
           <li class="links md:hidden">
             <span class="links-icon">
-              <img
-                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAA4JJREFUOE9lk21oW1Ucxp+b+5omuTfJTdMkS9MmTWO2ZWnqXkSxrB0i3YfZSsfYGFVEEBF0GegQNkg2FdQv6dSxsX6ZaNksgqtj1O6L6VSMW2m76exsttL3bknaJOvNS03SeC20FD1wPpzD+T885+H3EPjPCoXO+R5PjbVRJNXMsKSP51TwPNs0quSY8N+51b6WF1tGN48Qmw+Dkd+PXb98vosolcEyDDQsgR07m5CVcmB5AYVMJpXJPA4effPY2fW5DYE/J5e+u3L+w3YpmQLL0eAUCni9jTCo9VDqRKh1RtAqDrHZKWQW566+cLjz5X9F1gSi85J/duJ+6MY33SgWV0BRNHiawdPe3VCrtRCMFqh0etmFGgqUMdLbjYYjncctVnsXMT4r+RRkeaT/ykXEpidQKsh2K9TQ8iLqt9RBW2mG0WpDBa8CxTIgZWd/fP8VHK1tqSpzTQsRXVgOyrYC/T2foSj/ndcIUMnb6nChtJRHfDEFh8uNht0NoBgaBElg+vbPMPt8EI3m08TEIyn8Y9/Xe+ce3AMnP6CZCgiGKmzf9Rx6znWjXg7RoeewtcGDbDaHoVvD0JMreOZgB3R63SDxy/B4MnLtS20unYRBrESpWILRXo/te55H7N4DqEQT5qN34XQ5EV/OYyaRQXxkAIfffQ+VJkuKuPB5KJVPxYXlxCJMli2gSBI6qwN1bi9oKQ+wSkyMRmCy1aJGtp1NSZj8bQDu1gPQ6gxpInTmVJhGee/SowXYnU6QFAW92QaD1gJezaOwWsbkrZuobdyFaq8XBSmL4WuXsaP9IATROEic/eBUkCgUArHZGbi3PrUWlGhxAEtPYHRuQ6msQOJhFM49O6EzmVDMZdEd8OPQiQDMDtdp4uKnH/nSifnwwtSU4PE0QtDzMkQcGIKEptqOYjIDDc3LudSAs4mYuTOEC2f8eC0QSnuamn1rIH0RPOGfiY6Ham11sLi3IXZ/DGbRAK3TBawAPFQQzJVYYQro+eQkck+S2PfqW8dbX3m9awPlk0c7rpZopm3fSx1Y/GsMrAyUxloDXbULVTY7Vlfz+Kn3Eh4O/QqW5fre/3agfQPl9WJ07m/2d77xdjA3Ny0oZcplQmX6lEik07h9sx9ciUiLmorgOz3Xu/5XpvWLG729vkIy3q7muGaiXPLF5fKEI4OjqrwUBsVd+viHyOTmBv8DfT1AMl+IrFIAAAAASUVORK5CYII="
-                alt="Profile icon"
-              />
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAA4JJREFUOE9lk21oW1Ucxp+b+5omuTfJTdMkS9MmTWO2ZWnqXkSxrB0i3YfZSsfYGFVEEBF0GegQNkg2FdQv6dSxsX6ZaNksgqtj1O6L6VSMW2m76exsttL3bknaJOvNS03SeC20FD1wPpzD+T885+H3EPjPCoXO+R5PjbVRJNXMsKSP51TwPNs0quSY8N+51b6WF1tGN48Qmw+Dkd+PXb98vosolcEyDDQsgR07m5CVcmB5AYVMJpXJPA4effPY2fW5DYE/J5e+u3L+w3YpmQLL0eAUCni9jTCo9VDqRKh1RtAqDrHZKWQW566+cLjz5X9F1gSi85J/duJ+6MY33SgWV0BRNHiawdPe3VCrtRCMFqh0etmFGgqUMdLbjYYjncctVnsXMT4r+RRkeaT/ykXEpidQKsh2K9TQ8iLqt9RBW2mG0WpDBa8CxTIgZWd/fP8VHK1tqSpzTQsRXVgOyrYC/T2foSj/ndcIUMnb6nChtJRHfDEFh8uNht0NoBgaBElg+vbPMPt8EI3m08TEIyn8Y9/Xe+ce3AMnP6CZCgiGKmzf9Rx6znWjXg7RoeewtcGDbDaHoVvD0JMreOZgB3R63SDxy/B4MnLtS20unYRBrESpWILRXo/te55H7N4DqEQT5qN34XQ5EV/OYyaRQXxkAIfffQ+VJkuKuPB5KJVPxYXlxCJMli2gSBI6qwN1bi9oKQ+wSkyMRmCy1aJGtp1NSZj8bQDu1gPQ6gxpInTmVJhGee/SowXYnU6QFAW92QaD1gJezaOwWsbkrZuobdyFaq8XBSmL4WuXsaP9IATROEic/eBUkCgUArHZGbi3PrUWlGhxAEtPYHRuQ6msQOJhFM49O6EzmVDMZdEd8OPQiQDMDtdp4uKnH/nSifnwwtSU4PE0QtDzMkQcGIKEptqOYjIDDc3LudSAs4mYuTOEC2f8eC0QSnuamn1rIH0RPOGfiY6Ham11sLi3IXZ/DGbRAK3TBawAPFQQzJVYYQro+eQkck+S2PfqW8dbX3m9awPlk0c7rpZopm3fSx1Y/GsMrAyUxloDXbULVTY7Vlfz+Kn3Eh4O/QqW5fre/3agfQPl9WJ07m/2d77xdjA3Ny0oZcplQmX6lEik07h9sx9ciUiLmorgOz3Xu/5XpvWLG729vkIy3q7muGaiXPLF5fKEI4OjqrwUBsVd+viHyOTmBv8DfT1AMl+IrFIAAAAASUVORK5CYII=" alt="Profile icon" />
             </span>
             <a href="#">Profile</a>
           </li>
-          <li class="hidden md:flex md:items-center">
-            <img
-              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAA4JJREFUOE9lk21oW1Ucxp+b+5omuTfJTdMkS9MmTWO2ZWnqXkSxrB0i3YfZSsfYGFVEEBF0GegQNkg2FdQv6dSxsX6ZaNksgqtj1O6L6VSMW2m76exsttL3bknaJOvNS03SeC20FD1wPpzD+T885+H3EPjPCoXO+R5PjbVRJNXMsKSP51TwPNs0quSY8N+51b6WF1tGN48Qmw+Dkd+PXb98vosolcEyDDQsgR07m5CVcmB5AYVMJpXJPA4effPY2fW5DYE/J5e+u3L+w3YpmQLL0eAUCni9jTCo9VDqRKh1RtAqDrHZKWQW566+cLjz5X9F1gSi85J/duJ+6MY33SgWV0BRNHiawdPe3VCrtRCMFqh0etmFGgqUMdLbjYYjncctVnsXMT4r+RRkeaT/ykXEpidQKsh2K9TQ8iLqt9RBW2mG0WpDBa8CxTIgZWd/fP8VHK1tqSpzTQsRXVgOyrYC/T2foSj/ndcIUMnb6nChtJRHfDEFh8uNht0NoBgaBElg+vbPMPt8EI3m08TEIyn8Y9/Xe+ce3AMnP6CZCgiGKmzf9Rx6znWjXg7RoeewtcGDbDaHoVvD0JMreOZgB3R63SDxy/B4MnLtS20unYRBrESpWILRXo/te55H7N4DqEQT5qN34XQ5EV/OYyaRQXxkAIfffQ+VJkuKuPB5KJVPxYXlxCJMli2gSBI6qwN1bi9oKQ+wSkyMRmCy1aJGtp1NSZj8bQDu1gPQ6gxpInTmVJhGee/SowXYnU6QFAW92QaD1gJezaOwWsbkrZuobdyFaq8XBSmL4WuXsaP9IATROEic/eBUkCgUArHZGbi3PrUWlGhxAEtPYHRuQ6msQOJhFM49O6EzmVDMZdEd8OPQiQDMDtdp4uKnH/nSifnwwtSU4PE0QtDzMkQcGIKEptqOYjIDDc3LudSAs4mYuTOEC2f8eC0QSnuamn1rIH0RPOGfiY6Ham11sLi3IXZ/DGbRAK3TBawAPFQQzJVYYQro+eQkck+S2PfqW8dbX3m9awPlk0c7rpZopm3fSx1Y/GsMrAyUxloDXbULVTY7Vlfz+Kn3Eh4O/QqW5fre/3agfQPl9WJ07m/2d77xdjA3Ny0oZcplQmX6lEik07h9sx9ciUiLmorgOz3Xu/5XpvWLG729vkIy3q7muGaiXPLF5fKEI4OjqrwUBsVd+viHyOTmBv8DfT1AMl+IrFIAAAAASUVORK5CYII="
-              alt="Profile icon"
-            />
+          <li class="hidden w-8 aspect-square md:flex md:items-center">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAA4JJREFUOE9lk21oW1Ucxp+b+5omuTfJTdMkS9MmTWO2ZWnqXkSxrB0i3YfZSsfYGFVEEBF0GegQNkg2FdQv6dSxsX6ZaNksgqtj1O6L6VSMW2m76exsttL3bknaJOvNS03SeC20FD1wPpzD+T885+H3EPjPCoXO+R5PjbVRJNXMsKSP51TwPNs0quSY8N+51b6WF1tGN48Qmw+Dkd+PXb98vosolcEyDDQsgR07m5CVcmB5AYVMJpXJPA4effPY2fW5DYE/J5e+u3L+w3YpmQLL0eAUCni9jTCo9VDqRKh1RtAqDrHZKWQW566+cLjz5X9F1gSi85J/duJ+6MY33SgWV0BRNHiawdPe3VCrtRCMFqh0etmFGgqUMdLbjYYjncctVnsXMT4r+RRkeaT/ykXEpidQKsh2K9TQ8iLqt9RBW2mG0WpDBa8CxTIgZWd/fP8VHK1tqSpzTQsRXVgOyrYC/T2foSj/ndcIUMnb6nChtJRHfDEFh8uNht0NoBgaBElg+vbPMPt8EI3m08TEIyn8Y9/Xe+ce3AMnP6CZCgiGKmzf9Rx6znWjXg7RoeewtcGDbDaHoVvD0JMreOZgB3R63SDxy/B4MnLtS20unYRBrESpWILRXo/te55H7N4DqEQT5qN34XQ5EV/OYyaRQXxkAIfffQ+VJkuKuPB5KJVPxYXlxCJMli2gSBI6qwN1bi9oKQ+wSkyMRmCy1aJGtp1NSZj8bQDu1gPQ6gxpInTmVJhGee/SowXYnU6QFAW92QaD1gJezaOwWsbkrZuobdyFaq8XBSmL4WuXsaP9IATROEic/eBUkCgUArHZGbi3PrUWlGhxAEtPYHRuQ6msQOJhFM49O6EzmVDMZdEd8OPQiQDMDtdp4uKnH/nSifnwwtSU4PE0QtDzMkQcGIKEptqOYjIDDc3LudSAs4mYuTOEC2f8eC0QSnuamn1rIH0RPOGfiY6Ham11sLi3IXZ/DGbRAK3TBawAPFQQzJVYYQro+eQkck+S2PfqW8dbX3m9awPlk0c7rpZopm3fSx1Y/GsMrAyUxloDXbULVTY7Vlfz+Kn3Eh4O/QqW5fre/3agfQPl9WJ07m/2d77xdjA3Ny0oZcplQmX6lEik07h9sx9ciUiLmorgOz3Xu/5XpvWLG729vkIy3q7muGaiXPLF5fKEI4OjqrwUBsVd+viHyOTmBv8DfT1AMl+IrFIAAAAASUVORK5CYII=" alt="Profile icon" />
           </li>
         </ul>
         <div
@@ -117,25 +115,22 @@
         LOGO
       </div>
       <div class="md:hidden">
-        <img
-          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAA4JJREFUOE9lk21oW1Ucxp+b+5omuTfJTdMkS9MmTWO2ZWnqXkSxrB0i3YfZSsfYGFVEEBF0GegQNkg2FdQv6dSxsX6ZaNksgqtj1O6L6VSMW2m76exsttL3bknaJOvNS03SeC20FD1wPpzD+T885+H3EPjPCoXO+R5PjbVRJNXMsKSP51TwPNs0quSY8N+51b6WF1tGN48Qmw+Dkd+PXb98vosolcEyDDQsgR07m5CVcmB5AYVMJpXJPA4effPY2fW5DYE/J5e+u3L+w3YpmQLL0eAUCni9jTCo9VDqRKh1RtAqDrHZKWQW566+cLjz5X9F1gSi85J/duJ+6MY33SgWV0BRNHiawdPe3VCrtRCMFqh0etmFGgqUMdLbjYYjncctVnsXMT4r+RRkeaT/ykXEpidQKsh2K9TQ8iLqt9RBW2mG0WpDBa8CxTIgZWd/fP8VHK1tqSpzTQsRXVgOyrYC/T2foSj/ndcIUMnb6nChtJRHfDEFh8uNht0NoBgaBElg+vbPMPt8EI3m08TEIyn8Y9/Xe+ce3AMnP6CZCgiGKmzf9Rx6znWjXg7RoeewtcGDbDaHoVvD0JMreOZgB3R63SDxy/B4MnLtS20unYRBrESpWILRXo/te55H7N4DqEQT5qN34XQ5EV/OYyaRQXxkAIfffQ+VJkuKuPB5KJVPxYXlxCJMli2gSBI6qwN1bi9oKQ+wSkyMRmCy1aJGtp1NSZj8bQDu1gPQ6gxpInTmVJhGee/SowXYnU6QFAW92QaD1gJezaOwWsbkrZuobdyFaq8XBSmL4WuXsaP9IATROEic/eBUkCgUArHZGbi3PrUWlGhxAEtPYHRuQ6msQOJhFM49O6EzmVDMZdEd8OPQiQDMDtdp4uKnH/nSifnwwtSU4PE0QtDzMkQcGIKEptqOYjIDDc3LudSAs4mYuTOEC2f8eC0QSnuamn1rIH0RPOGfiY6Ham11sLi3IXZ/DGbRAK3TBawAPFQQzJVYYQro+eQkck+S2PfqW8dbX3m9awPlk0c7rpZopm3fSx1Y/GsMrAyUxloDXbULVTY7Vlfz+Kn3Eh4O/QqW5fre/3agfQPl9WJ07m/2d77xdjA3Ny0oZcplQmX6lEik07h9sx9ciUiLmorgOz3Xu/5XpvWLG729vkIy3q7muGaiXPLF5fKEI4OjqrwUBsVd+viHyOTmBv8DfT1AMl+IrFIAAAAASUVORK5CYII="
-          alt=""
-        />
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAA4JJREFUOE9lk21oW1Ucxp+b+5omuTfJTdMkS9MmTWO2ZWnqXkSxrB0i3YfZSsfYGFVEEBF0GegQNkg2FdQv6dSxsX6ZaNksgqtj1O6L6VSMW2m76exsttL3bknaJOvNS03SeC20FD1wPpzD+T885+H3EPjPCoXO+R5PjbVRJNXMsKSP51TwPNs0quSY8N+51b6WF1tGN48Qmw+Dkd+PXb98vosolcEyDDQsgR07m5CVcmB5AYVMJpXJPA4effPY2fW5DYE/J5e+u3L+w3YpmQLL0eAUCni9jTCo9VDqRKh1RtAqDrHZKWQW566+cLjz5X9F1gSi85J/duJ+6MY33SgWV0BRNHiawdPe3VCrtRCMFqh0etmFGgqUMdLbjYYjncctVnsXMT4r+RRkeaT/ykXEpidQKsh2K9TQ8iLqt9RBW2mG0WpDBa8CxTIgZWd/fP8VHK1tqSpzTQsRXVgOyrYC/T2foSj/ndcIUMnb6nChtJRHfDEFh8uNht0NoBgaBElg+vbPMPt8EI3m08TEIyn8Y9/Xe+ce3AMnP6CZCgiGKmzf9Rx6znWjXg7RoeewtcGDbDaHoVvD0JMreOZgB3R63SDxy/B4MnLtS20unYRBrESpWILRXo/te55H7N4DqEQT5qN34XQ5EV/OYyaRQXxkAIfffQ+VJkuKuPB5KJVPxYXlxCJMli2gSBI6qwN1bi9oKQ+wSkyMRmCy1aJGtp1NSZj8bQDu1gPQ6gxpInTmVJhGee/SowXYnU6QFAW92QaD1gJezaOwWsbkrZuobdyFaq8XBSmL4WuXsaP9IATROEic/eBUkCgUArHZGbi3PrUWlGhxAEtPYHRuQ6msQOJhFM49O6EzmVDMZdEd8OPQiQDMDtdp4uKnH/nSifnwwtSU4PE0QtDzMkQcGIKEptqOYjIDDc3LudSAs4mYuTOEC2f8eC0QSnuamn1rIH0RPOGfiY6Ham11sLi3IXZ/DGbRAK3TBawAPFQQzJVYYQro+eQkck+S2PfqW8dbX3m9awPlk0c7rpZopm3fSx1Y/GsMrAyUxloDXbULVTY7Vlfz+Kn3Eh4O/QqW5fre/3agfQPl9WJ07m/2d77xdjA3Ny0oZcplQmX6lEik07h9sx9ciUiLmorgOz3Xu/5XpvWLG729vkIy3q7muGaiXPLF5fKEI4OjqrwUBsVd+viHyOTmBv8DfT1AMl+IrFIAAAAASUVORK5CYII=" alt="" />
       </div>
     </header>
 
-    <main>
+    <main class="animate__animated animate__fadeInUp">
       <!-- Hero Section -->
-      <section>
+      <section class="xl:grid xl:grid-cols-[60%_40%] xl:items-center">
         <article class="grid grid-cols-1 grid-rows-1">
           <div
-            class="z-10 col-start-1 row-start-1 bg-black/[0.2] px-24px-80px py-40px-80px text-2xl text-white"
+            class="z-10 col-start-1 row-start-1 bg-black/[0.2] px-24px-80px py-40px-80px text-2xl text-white md:px-80px-140px md:py-80px-180px"
           >
             <h1 class="border-b-2 border-b-white pb-9 font-bold uppercase">
               World news
             </h1>
             <h2 class="pt-11 pb-14 font-bold">Amazing places in America</h2>
-            <p class="pb-5 text-base">
+            <p class="pb-5 text-base md:max-w-xl">
               For some reason — this country, this city, this neighborhood, this
               particular street — is the place you are living a majority of your
               life in.
@@ -149,20 +144,25 @@
           <img
             src="./assets/hero-c57ee01a.jpg"
             alt=""
-            class="col-start-1 row-start-1 h-full object-cover"
+            class="col-start-1 row-start-1 h-full object-cover w-full"
           />
         </article>
 
         <!-- More News -->
-        <article class="px-24px-80px pt-11 pb-10">
+        <article class="px-24px-80px pt-11 pb-10 md:px-80px-140px xl:py-0 xl:px-24">
           <div class="more-news">
             <h2 class="section-title">More news</h2>
             <div class="arrows">
-              <img src="./assets/arrowbackleft-8a3018c6.svg" alt="arrow left" />
+              <img
+                src="./assets/arrowbackleft-8a3018c6.svg"
+                alt="arrow left"
+              />
               <img src="./assets/arrow-5ec3440c.svg" alt="arrow right" />
             </div>
           </div>
-          <div class="flex flex-col gap-10 pt-9 text-light-cyan-blue">
+          <div
+            class="flex flex-col gap-10 pt-9 text-light-cyan-blue md:flex-row md:items-center md:justify-between xl:flex-col"
+          >
             <!-- Travel -->
             <div class="travel-text-wrapper">
               <h3 class="news-heading">Travel</h3>
@@ -195,56 +195,70 @@
 
       <!-- Trending -->
       <section>
-        <article class="px-24px-80px pt-11 pb-9 text-custom-black">
-          <div class="trending">
+        <article class="px-24px-80px pt-11 pb-9 text-custom-black md:px-80px-140px">
+          <div class="trending md:border-0">
             <h2 class="section-title">Trending</h2>
             <div class="arrows">
-              <img src="./assets/arrowbackleft-8a3018c6.svg" alt="arrow left" />
+              <img
+                src="./assets/arrowbackleft-8a3018c6.svg"
+                alt="arrow left"
+              />
               <img src="./assets/arrow-5ec3440c.svg" alt="arrow right" />
             </div>
           </div>
 
-          <div class="mb-9">
-            <img src="./assets/trending1-c4b102bc.jpg" alt="" />
-            <div class="trending-card">
-              <h3>Dolore magna aliqua</h3>
-              <p class="font-acumin text-13px text-light-cyan-blue">
-                Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad
-                has appareat.
-              </p>
-              <div class="time">
-                <img src="./assets/time-ad62a57e.svg" alt="icon of a clock" />
-                <p>2m ago</p>
+          <div class="flex flex-col gap-9 md:flex-row md:justify-center">
+            <div class="w-full">
+              <img src="./assets/trending1-c4b102bc.jpg" alt="" class="w-full"/>
+              <div class="trending-card">
+                <h3>Dolore magna aliqua</h3>
+                <p class="font-acumin text-13px text-light-cyan-blue">
+                  Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad
+                  has appareat.
+                </p>
+                <div class="time">
+                  <img
+                    src="./assets/time-ad62a57e.svg"
+                    alt="icon of a clock"
+                  />
+                  <p>2m ago</p>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div>
-            <img src="./assets/trending2-1393c58b.jpg" alt="" />
-            <div class="trending-card">
-              <h3>Dolore magna aliqua</h3>
-              <p>
-                Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad
-                has appareat.
-              </p>
-              <div class="time">
-                <img src="./assets/time-ad62a57e.svg" alt="icon of a clock" />
-                <p>1h ago</p>
+            <div class="w-full">
+              <img src="./assets/trending2-1393c58b.jpg" alt="" class="w-full"/>
+              <div class="trending-card">
+                <h3>Dolore magna aliqua</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad
+                  has appareat.
+                </p>
+                <div class="time">
+                  <img
+                    src="./assets/time-ad62a57e.svg"
+                    alt="icon of a clock"
+                  />
+                  <p>1h ago</p>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="hidden">
-            <img src="./assets/trending3-e030ab46.jpg" alt="" />
-            <div class="trending-card">
-              <h3>Morbi eleifend a libero</h3>
-              <p>
-                Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad
-                has appareat.
-              </p>
-              <div class="time">
-                <img src="./assets/time-ad62a57e.svg" alt="icon of a clock" />
-                <p>1h ago</p>
+            <div class="hidden w-full xl:block">
+              <img src="./assets/trending3-e030ab46.jpg" alt="" class="w-full"/>
+              <div class="trending-card">
+                <h3>Morbi eleifend a libero</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad
+                  has appareat.
+                </p>
+                <div class="time">
+                  <img
+                    src="./assets/time-ad62a57e.svg"
+                    alt="icon of a clock"
+                  />
+                  <p>1h ago</p>
+                </div>
               </div>
             </div>
           </div>
@@ -252,17 +266,19 @@
       </section>
 
       <!-- Happening Now -->
-      <section>
-        <article class="px-24px-80px pb-20">
-          <div class="happening">
-            <h2 class="section-title">Happening now</h2>
-            <div class="arrows">
-              <img src="./assets/arrowbackleft-8a3018c6.svg" alt="arrow left" />
-              <img src="./assets/arrow-5ec3440c.svg" alt="arrow right" />
-            </div>
+      <section class="xl:grid xl:grid-cols-[62.5%_auto] xl:gap-x-10 xl:pb-[6.25rem]">
+        <div class="happening xl:col-span-2 px-24px-80px md:px-80px-140px md:border-0">
+          <h2 class="section-title">Happening now</h2>
+          <div class="arrows">
+            <img
+              src="./assets/arrowbackleft-8a3018c6.svg"
+              alt="arrow left"
+            />
+            <img src="./assets/arrow-5ec3440c.svg" alt="arrow right" />
           </div>
-
-          <div class="happening-card mb-10">
+        </div>
+        <article class="px-24px-80px pb-20 md:pb-10 md:px-80px-140px xl:pr-0 xl:flex xl:flex-col xl:pb-0">
+          <div class="happening-card mb-10 xl:mb-10 xl:h-1/2">
             <img
               src="./assets/happening1-31ca293e.jpg"
               alt=""
@@ -277,14 +293,17 @@
                   detracto, vidit vituperatoribus duo id. Affert detraxit
                 </p>
                 <div class="time">
-                  <img src="./assets/time-ad62a57e.svg" alt="icon of a clock" />
+                  <img
+                    src="./assets/time-ad62a57e.svg"
+                    alt="icon of a clock"
+                  />
                   <p>1h ago</p>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="happening-card">
+          <div class="happening-card xl:h-1/2">
             <img
               src="./assets/happening2-dc3b7945.jpg"
               alt=""
@@ -299,21 +318,22 @@
                   detracto, vidit vituperatoribus duo id. Affert detraxit
                 </p>
                 <div class="time">
-                  <img src="./assets/time-ad62a57e.svg" alt="icon of a clock" />
+                  <img
+                    src="./assets/time-ad62a57e.svg"
+                    alt="icon of a clock"
+                  />
                   <p>1h ago</p>
                 </div>
               </div>
             </div>
           </div>
         </article>
-      </section>
 
-      <!-- Cards -->
-      <section>
+        <!-- CARDS -->
         <article
-          class="flex flex-col gap-10 px-24px-80px pb-6 text-custom-black"
+          class="flex flex-col items-center gap-10 px-24px-80px pb-6 text-custom-black md:flex-row md:pb-16 md:px-80px-140px md:justify-center xl:flex-col xl:pl-0 xl:gap-6 xl:pb-0"
         >
-          <div>
+          <div class="w-full">
             <img src="./assets/card1-e87a7716.jpg" alt="" class="cards-img" />
             <div>
               <h2>Small Title</h2>
@@ -324,7 +344,7 @@
             </div>
           </div>
 
-          <div>
+          <div class="w-full">
             <img src="./assets/card2-e25dd4fa.jpg" alt="" class="cards-img" />
             <div>
               <h2>Small Title</h2>
@@ -335,7 +355,7 @@
             </div>
           </div>
 
-          <div>
+          <div class="w-full md:hidden xl:block">
             <img src="./assets/card3-605507ff.jpg" alt="" class="cards-img" />
             <div>
               <h2>Small Title</h2>
@@ -349,8 +369,8 @@
       </section>
     </main>
 
-    <footer class="hidden bg-light-cyan-blue px-24px-80px py-14 md:block">
-      <div class="grid grid-cols-1 grid-rows-2 gap-y-12 text-white">
+    <footer class="hidden bg-light-cyan-blue px-24px-80px py-14 md:block md:px-80px-140px">
+      <div class="grid grid-cols-1 grid-rows-2 gap-y-12 text-white xl:grid-cols-2 xl:grid-rows-1 xl:gap-14">
         <div class="grid grid-cols-2">
           <div class="text-13px font-bold">LOGO</div>
           <ul
